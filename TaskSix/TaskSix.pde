@@ -43,7 +43,7 @@ void draw(){
   // First part before the ?-mark, is a conditional. 
   // If this is true, the value after the ?-mark will be assigned. 
   // If not, the last value will.
-  counter =  frameCount % numberOfCircles == 0 ? 0 : counter+1;
+  counter =  frameCount % numberOfCircles == 0 ? 0 : counter+1; // framecount tæller hvor mange ganger vi gentegner - når framecount divideres med numberofcircles går i 0 og inge rest har, vil den starte forfra, men hvis vi ser en rest vil der blive tegnet en cirkel mere
   rowCounter =  counter==0 ? rowCounter+1:rowCounter;
   
   
@@ -54,7 +54,7 @@ void draw(){
   // 3 % 3 = 0
  
  //opg.6,c 
- red= counter==0? (int)random(255):red;
+ red= counter==0? (int)random(255):red; // (== er lig med =) hvis counter er 0, vil en ny række starter med en random farve (alle tre farver)
  green= counter==0? (int)random(255):green;
  blue= counter==0? (int)random(255):blue;
  

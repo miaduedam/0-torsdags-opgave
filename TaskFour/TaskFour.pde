@@ -10,7 +10,7 @@ void setup(){
   println("adresse" + address);
   sum=2+4;
   println("summen" + sum);
-  divisionResult=2/4;
+  divisionResult=2/4f; //sat et lille f, da det bruges som (float), tallet bliver mere præcist
   println("resultat" + divisionResult);
   message="hello world";
   println("besked" +message);
